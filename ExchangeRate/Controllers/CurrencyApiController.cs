@@ -29,10 +29,8 @@ namespace ExchangeRate.Controllers
             if (dataFromDb == null)
             {
                 /*
-                 * reading the API from the documentation:
+                 * Taken from API documentation:
                  * https://apilayer.com/marketplace/fixer-api?e=Sign+In&l=Success#details-tab
-                 * 
-                 
                  */
                 var client = new RestClient($"https://api.apilayer.com/fixer/latest?&base={baseName}");
 

@@ -6,7 +6,7 @@ Read the data from the database to a console log prosject.
 
 ## API Setup
 
-First create a account in Fixer.io 
+First create a account in Fixer.io <br />
 https://apilayer.com/marketplace/fixer-api#pricing 
 get your API key from the website account page.
 https://apilayer.com/account 
@@ -27,7 +27,7 @@ We can access the data through the context object allowing us to query and save 
 To save the data from Fixer.io we need to create a database.
 Go to SQL server Management studio and get the Server name
 
-see documentation for setup.
+see documentation for setup. <br />
 https://learn.microsoft.com/en-us/ef/core/miscellaneous/connection-strings
 
 Add the server name inside  the connection string in the appsettings.json
@@ -41,14 +41,14 @@ Add image her getConnetionString
 Add the start project to ExchangeRate.
 Inside the Package manager Console check that the Default project is Infrastructure.
 
-Add the migration and  configure the database by following the documentation
+Add the migration and  configure the database by following the documentation <br />
 https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs
 
 We can run the project by setting the startup project as multiple and starting the Web API without the debugging. 
 
 
 We can run the project by adding the currency that for the conversion.
-see all currency and currency code in documentation
+see all currency and currency code in documentation. <br />
 https://fixer.io/symbols 
 
 

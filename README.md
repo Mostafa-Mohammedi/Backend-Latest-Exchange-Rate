@@ -8,7 +8,9 @@ Read the data from the database to a console log prosject.
 
 First create a account in Fixer.io <br />
 https://apilayer.com/marketplace/fixer-api#pricing 
+<br />
 get your API key from the website account page.
+<br />
 https://apilayer.com/account 
 
 ADD image her

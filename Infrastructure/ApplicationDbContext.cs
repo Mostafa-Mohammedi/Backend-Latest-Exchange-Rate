@@ -3,16 +3,22 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure
 {
+
+    /*
+     Database first approach generated the connection with the database 
+    Scaffold-DbContext "Data Source=user your connection string;Initial Catalog=currencyDb;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force -Context ApplicationDbContext
+    Nam
+     */
     public partial class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)                         // configruation for giving us the acces for the yo DbSet
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)                         
             : base(options)
         {
 
         }
 
-        public virtual DbSet<RatesUpdate> RatesUpdates { get; set; } = null!;                               //gives us the acces to the entities inside the RatesUpdates class
-        public virtual DbSet<Update> Updates { get; set; } = null!;                                         // gives is the acces to the entities inside the Update class
+        public virtual DbSet<RatesUpdate> RatesUpdates { get; set; } = null!;                               
+        public virtual DbSet<Update> Updates { get; set; } = null!;                                         
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -18,6 +18,8 @@ namespace Infrastructure
         public UpdateViewModel GetUpdate(string baseName)
         //*
         //we are getting the uptdate currency and the equal exchange rate for the different 
+        //accessing the database
+        //Select the necessary information to the user
         //*/
         {
             var data = _context.Updates
@@ -25,7 +27,6 @@ namespace Infrastructure
         e!.Base!.Equals(baseName) &&
         e.DateUpdate!.Value.Date == DateTime.Now.Date
         )
-            .OrderBy(e => e.DateUpdate)
             .Include(e => e.RatesUpdates)
             .AsNoTracking()
             .Select(update => new UpdateViewModel
@@ -46,7 +47,7 @@ namespace Infrastructure
         public UpdateViewModel SaveData(Update instance)
         {
             /*
-             Her we are returning the Updated currency information from the GetUpdate method 
+             Here we are returning the Updated currency information from the GetUpdate method 
              */
 
             _context.Updates.Add(instance);

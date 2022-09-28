@@ -9,8 +9,7 @@ namespace Entities
     public partial class Update
     {
         // The Update class is in charge of updating the currency
-
-
+        //Auomatically created with the database firste approach
 
         public Update()
         {
@@ -25,10 +24,7 @@ namespace Entities
         public DateTime? DateUpdate { get; set; }
         public string? Base { get; set; }
         public string? Timestamp { get; set; }
-
         public virtual ICollection<RatesUpdate> RatesUpdates { get; set; }                     
-
-
 
     }
 }

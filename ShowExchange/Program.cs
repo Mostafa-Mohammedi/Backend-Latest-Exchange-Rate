@@ -16,6 +16,7 @@ while (true)
         Console.WriteLine("\n invalid currency \n");
         input = Console.ReadLine();
     }
+
     var client = new RestClient($"https://localhost:7030/CurrencyApi/GetCurrency?baseName={input}");
     client.Timeout = -1;
     var request = new RestRequest(Method.GET);
@@ -24,7 +25,7 @@ while (true)
 
     UpdateViewModel update = JsonConvert.DeserializeObject<UpdateViewModel>(response.Content);
 
-    Console.WriteLine("----------Results--------");
+    Console.WriteLine("\n ----------Results--------");
 
     Console.WriteLine(" \n Currency " + update.Base);
     

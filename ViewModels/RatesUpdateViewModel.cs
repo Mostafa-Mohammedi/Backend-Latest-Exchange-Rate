@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ViewModels
 {
-    // Is in charge of representing the parameters that we are going to display on the view/page
+    
+    //Is in charge of representing the parameters that we are going to display for the user
     // are going to show the currency and equal amount
 
     public partial class RatesUpdateViewModel

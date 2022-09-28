@@ -3,12 +3,11 @@
     public partial class UpdateViewModel
     {
         // is in chage of displaying the date for for rates update time and currency
-        //output a list of updated currency
+        //output a list of updated currency for the user 
+
         public UpdateViewModel()
         {
             RatesUpdates = new HashSet<RatesUpdateViewModel>();
-
-
         }
 
         public string? DateUpdate { get; set; }

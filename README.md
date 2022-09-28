@@ -13,7 +13,7 @@ get your API key from the website account page.
 <br />
 https://apilayer.com/account 
 
-ADD image her
+https://github.com/mohmos94/ExchangeRateSolution/issues/1#issue-1389580025
 
 Go to the Controller class 
 and set the API key in the String apiKey

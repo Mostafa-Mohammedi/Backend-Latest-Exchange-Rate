@@ -18,7 +18,7 @@ https://apilayer.com/account
 Go to the Controller class 
 and set the API key in the String apiKey
 
-add api key image her
+![key](https://user-images.githubusercontent.com/86916224/192825106-31dfd07b-6337-43bf-9517-00842da1aaab.png)
 
 
 ## Database Setup
@@ -34,7 +34,7 @@ https://learn.microsoft.com/en-us/ef/core/miscellaneous/connection-strings
 
 Add the server name inside  the connection string in the appsettings.json
 Copy the connectionString name and write it in the GetConnectionString in the Program class inside the Web Api.
-
+![connectionString](https://user-images.githubusercontent.com/86916224/192825313-e5059c27-16a2-4061-99f2-6596dc44af23.png)
 
 Add image her getConnetionString
 
@@ -60,7 +60,7 @@ Console App
 The Console App start to ask you for the base currency. 
 Thereafter you can choice to look for a specific currency conversion or get the list of all conversions.
 
-Last image her
+![console](https://user-images.githubusercontent.com/86916224/192825509-422ec2f5-c35a-452c-ab49-cf705c94eda3.png)
 
 
 
